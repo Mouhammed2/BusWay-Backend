@@ -28,7 +28,7 @@ public class BusController {
         return ResponseEntity.ok(ApiResponse.success("Buses retrieved successfully", buses));
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{id}")e
     public ResponseEntity<ApiResponse<BusResponse>> getBusById(@PathVariable Long id) {
         BusResponse bus = busService.getBusById(id);
         return ResponseEntity.ok(ApiResponse.success("Bus retrieved successfully", bus));
